@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Stop</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">PC Stop</div>
+        <ul class="nav-box">
+            <li class="link-box">
+                <a id="home" href="#" class="link">Home</a>
+            </li>
+            <li class="link-box">
+                <a href="#" class="link">New Arrivals</a>
+            </li>
+            <li class="link-box">
+                <a href="#" class="link">Catalog</a>
+            </li>
+            <li class="link-box">
+                <a href="#" class="link">About</a>
+            </li>
+            <li class="link-box">
+                <a href="#" class="link">Contact</a>
+            </li>
+        </ul>
+        <div id="cart">
+            <h5 id="cart-heading">Your Cart</h5>
+            <div id="cart-items">
+                <h5 id="empty-cart">Empty</h5>
+            </div>
+            <h5 id="total-price"></h5>
+            <button id="clear-all">
+                Clear all
+                <i class="fa fa-trash-o"></i>
+            </button>
+        </div>
+        <div id="nav-bg"></div>
+        <div id="burger-shopping">
+            <div id="shopping-cart-container">
+                <i id="main-cart" class="fa fa-shopping-cart"></i>
+                <div id="shopping-amount"></div>
+            </div>
+            <div class="burger">
+                <div class="burger-part"></div>
+                <div id="middle-part" class="burger-part"></div>
+                <div class="burger-part"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="upper-part">
+            <div id="main-heading">
+                <h1>Top gaming PCs right here!</h1>
+                <div id="choice">
+                    <h3 id="to-pc">&gt Check them out &lt</h3>
+                </div>
+            </div>
+            <div class="line" id="pc-line"></div>
+        </div>
+        <div class="computers">
+            <h4 id="pc-heading">Top PCs right now</h4>
+            <div class="pc-flex">
+                <div class="pc">
+                    <img class="pc-images" src="./1pc.jpg" alt="Nova Advanced">
+                    <h5 class="pc-name">Nova Advanced</h5>
+                    <p class="pc-price">$2.379,00</p>
+                    <button onclick="addToCart(0, 2379.00)" class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+                <div class="pc">
+                    <img class="pc-images" src="./2pc.jpg" alt="Fury Core">
+                    <h5 class="pc-name">Fury Core gaming PC</h5>
+                    <p class="pc-price">$3,429.00</p>
+                    <button onclick="addToCart(1, 3429)" class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+                <div class="pc">
+                    <img class="pc-images" src="./3pc.jpg" alt="Elysium Elite">
+                    <h5 class="pc-name">Elysium Elite gaming PC</h5>
+                    <p class="pc-price">$3,732.00</p>
+                    <button onclick="addToCart(2, 3732)" class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+                <div class="pc">
+                    <img class="pc-images" src="./4pc.jpg" alt="Chillblast Luna">
+                    <h5 class="pc-name">Chillblast Luna Core</h5>
+                    <p class="pc-price">$864.00</p>
+                    <button onclick="addToCart(3, 864)" class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+                <div class="pc">
+                    <img class="pc-images" src="./5pc.jpg" alt="Neptune Advanced">
+                    <h5 class="pc-name">Neptune Advanced gaming PC</h5>
+                    <p class="pc-price">$1,357.00</p>
+                    <button onclick="addToCart(4, 1357)" class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+                <div class="pc">
+                    <img class="pc-images" src="./6pc.jpg" alt="The Wraith Core">
+                    <h5 class="pc-name">The Wraith Core</h5>
+                    <p class="pc-price">$1,232.00</p>
+                    <button onclick="addToCart(5, 1232)" class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+                <div class="pc">
+                    <img class="pc-images" src="./7pc.jpg" alt="Serenity range of Chillblast gaming PC">
+                    <h5 class="pc-name">Serenity range of Chillblast gaming PC</h5>
+                    <p class="pc-price">$2,572.00</p>
+                    <button onclick="addToCart(6, 2572)" class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+                <div class="pc">
+                    <img class="pc-images" src="./8pc.jpg" alt="Mini ITX Ion Advanced">
+                    <h5 class="pc-name"> Mini ITX Ion Advanced</h5>
+                    <p class="pc-price">$1,621.00</p>
+                    <button onclick="addToCart(7, 1621)" class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
